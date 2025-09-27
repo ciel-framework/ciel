@@ -1,0 +1,6 @@
+# For building wheels and source distributions
+build
+
+# Static analysis
+mypy
+flake8
