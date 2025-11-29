@@ -158,7 +158,7 @@ public class FileServer(string root, bool listing = false, bool showHidden = fal
 
 
         sb.Append("</ul>");
-        sb.Append("<footer>Powered by Ciel 🌌</footer>");
+        sb.Append("<footer>Powered by <a href=\"https://github.com/ciel-framework/ciel\">Ciel</a> 🌌</footer>");
         sb.Append("</body></html>");
 
         await resp.WriteAsync(sb.ToString());

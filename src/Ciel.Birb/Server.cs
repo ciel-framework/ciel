@@ -7,19 +7,25 @@ public class Server(IHandler handler, ILogger logger, Configs configs)
 {
     private async Task HandleClientAsync(TcpClient client)
     {
-        using var tcp = client;
-        var stream = tcp.GetStream();
+        var stream = client.GetStream();
+        var keepAlive = true;
 
-        while (true)
+        while (keepAlive)
         {
-            Request request;
-            request = await Request.ReadHeaderAsync(stream);
+            var request = await Request.ReadHeaderAsync(stream);
+            var connectionHeader = request.Headers.First(Header.Connection) ?? "keep-alive";
+            if (connectionHeader == "close") keepAlive = false;
+
             logger.LogInformation("{Method} {RawPath} {Version}", request.Method, request.RawPath, request.Version);
 
             var response = new ResponseWriterImpl(stream);
             response.Headers.Add(Header.Server, configs.Name);
 
             await handler.HandleAsync(request, response);
+
+            connectionHeader = response.Headers.First(Header.Connection) ?? "keep-alive";
+            if (connectionHeader == "close") keepAlive = false;
+
             await stream.FlushAsync();
         }
     }
