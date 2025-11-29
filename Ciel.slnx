@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+  </Configurations>
+  <Project Path="src/Ciel.Api/Ciel.Api.csproj" />
+  <Project Path="src/Ciel.Birb/Ciel.Birb.csproj" />
+  <Project Path="src/Ciel.Birb.Extra/Ciel.Birb.Extra.csproj" />
+  <Project Path="src/Ciel.BuildTasks/Ciel.BuildTasks.csproj" />
+  <Project Path="src/Ciel.Runtime/Ciel.Runtime.csproj" />
+  <Project Path="src/Ciel.Tests/Ciel.Tests.csproj" />
+</Solution>
