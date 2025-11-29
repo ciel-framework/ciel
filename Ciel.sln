@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciel.Api", "Ciel.Api\Ciel.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciel.BuildTasks", "Ciel.BuildTasks\Ciel.BuildTasks.csproj", "{753A0BA3-D4D0-4F8F-BA70-A29AB1CE7902}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciel.Birb", "Ciel.Birb\Ciel.Birb.csproj", "{50A79E2D-0047-4583-907C-4BB27B765871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciel.Birb.Extra", "Ciel.Birb.Extra\Ciel.Birb.Extra.csproj", "{F4C8B52F-9824-427D-9EF4-BBD640512F06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{753A0BA3-D4D0-4F8F-BA70-A29AB1CE7902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753A0BA3-D4D0-4F8F-BA70-A29AB1CE7902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753A0BA3-D4D0-4F8F-BA70-A29AB1CE7902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A79E2D-0047-4583-907C-4BB27B765871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A79E2D-0047-4583-907C-4BB27B765871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A79E2D-0047-4583-907C-4BB27B765871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A79E2D-0047-4583-907C-4BB27B765871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C8B52F-9824-427D-9EF4-BBD640512F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C8B52F-9824-427D-9EF4-BBD640512F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C8B52F-9824-427D-9EF4-BBD640512F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C8B52F-9824-427D-9EF4-BBD640512F06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

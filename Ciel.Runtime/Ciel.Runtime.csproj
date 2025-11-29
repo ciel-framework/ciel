@@ -10,14 +10,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Ciel.Api\Ciel.Api.csproj" />
+        <ProjectReference Include="..\Ciel.Api\Ciel.Api.csproj"/>
+        <ProjectReference Include="..\Ciel.Birb.Extra\Ciel.Birb.Extra.csproj"/>
+        <ProjectReference Include="..\Ciel.Birb\Ciel.Birb.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Build" Version="17.14.28" ExcludeAssets="runtime"/>
-      <PackageReference Include="Microsoft.Build.Locator" Version="1.10.12" />
-      <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0-2.final" />
-      <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.0.0-2.final" />
+        <PackageReference Include="Microsoft.Build" Version="17.14.28" ExcludeAssets="runtime"/>
+        <PackageReference Include="Microsoft.Build.Locator" Version="1.10.12"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0-2.final"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.0.0-2.final"/>
     </ItemGroup>
 
 </Project>

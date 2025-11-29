@@ -1,17 +1,12 @@
-﻿using Microsoft.Build.Locator;
+﻿using Ciel.Birb;
+using Ciel.Birb.Extra;
 
 namespace Ciel;
 
-public static class Runtime {
-    public static async Task Main() {
-        if(!MSBuildLocator.IsRegistered)
-            MSBuildLocator.RegisterDefaults();
-        var res = ModuleRegistry.Initialize([
-            "/home/mathilde/projects/ciel-framework/CielTemplate/CielTemplate.sln",
-        ]);
-        foreach (var v in res)
-        {
-            Console.WriteLine($"{v.Key}: {v.Value}");
-        }
+public static class Runtime
+{
+    public static async Task Main()
+    {
+        await Server.ServeAsync(new FileServer(Directory.GetCurrentDirectory(), true));
     }
 }
