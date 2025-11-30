@@ -4,9 +4,11 @@
   </Configurations>
   <Folder Name="/Exemples/" />
   <Folder Name="/Tests/">
-    <Project Path="Ciel.Birb.Tests\Ciel.Birb.Tests.csproj" Type="Classic C#" />
+    <Project Path="src/Ciel.Birb.Tests/Ciel.Birb.Tests.csproj" />
+    <Project Path="src/Ciel.Breeze.Tests/Ciel.Breeze.Tests.csproj" />
     <Project Path="src/Ciel.Tests/Ciel.Tests.csproj" />
   </Folder>
+  <Project Path="src/Ciel.Breeze/Ciel.Breeze.csproj" />
   <Project Path="src/Ciel.Api/Ciel.Api.csproj" />
   <Project Path="src/Ciel.Birb/Ciel.Birb.csproj" />
   <Project Path="src/Ciel.BuildTasks/Ciel.BuildTasks.csproj" />

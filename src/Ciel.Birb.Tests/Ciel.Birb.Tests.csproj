@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\Ciel.Birb\Ciel.Birb.csproj"/>
+        <ProjectReference Include="..\Ciel.Birb\Ciel.Birb.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Ciel.Birb;
+using Ciel.Breeze;
 
 namespace Ciel;
 
@@ -6,6 +7,9 @@ public static class Runtime
 {
     public static async Task Main()
     {
+        var tokens = Lexer.Tokenize("Hello World {{wow}} {%name%} {if true}wow{/if}");
+        foreach (var token in tokens) Console.WriteLine(token);
+
         Router router = new();
 
         // router.Get("/hello", async (req, resp) => { await resp.WriteAsync("Hello World!"); });
