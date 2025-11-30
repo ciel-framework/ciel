@@ -11,7 +11,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Ciel.Api\Ciel.Api.csproj"/>
-        <ProjectReference Include="..\Ciel.Birb.Extra\Ciel.Birb.Extra.csproj"/>
         <ProjectReference Include="..\Ciel.Birb\Ciel.Birb.csproj"/>
     </ItemGroup>
 

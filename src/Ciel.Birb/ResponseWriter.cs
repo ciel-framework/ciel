@@ -28,7 +28,7 @@ public abstract class ResponseWriter
             var buffer = await File.ReadAllBytesAsync(path, ct);
             await WriteAsync(buffer, ct);
         }
-        catch (FileNotFoundException e)
+        catch (Exception e)
         {
             await NotFoundAsync();
         }

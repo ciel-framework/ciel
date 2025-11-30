@@ -1,13 +1,15 @@
 using System.Text;
 
-namespace Ciel.Birb.Extra;
+namespace Ciel.Birb;
 
-public class FileServer(string root, bool listing = false, bool showHidden = false) : IHandler
+public class Static(string root, bool listing = false, bool showHidden = false) : IHandler
 {
     public async Task HandleAsync(Request req, ResponseWriter resp)
     {
+        req.PathParams.TryGetValue("path", out var pathParam);
+
         var fullpath = Path.GetFullPath(
-            Path.Combine(root, req.Path.TrimStart('/'))
+            Path.Combine(root, (pathParam ?? req.Path).TrimStart('/'))
         );
 
         var rootWithSep = root.EndsWith(Path.DirectorySeparatorChar)

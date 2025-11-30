@@ -17,9 +17,23 @@ public class Request
         }
     }
 
+    public Uri Url
+    {
+        get
+        {
+            var raw = RawPath;
+            var host = Headers.First("Host") ?? "localhost";
+            var uriStr = $"http://{host}{raw}";
+            return new Uri(uriStr, UriKind.Absolute);
+        }
+    }
+
     public Version Version { get; private init; } = Version.Http11;
     public Headers Headers { get; private init; } = new();
     public Body Body { get; private init; } = null!;
+
+    public RouteParams PathParams { get; set; } = new();
+    public RouteParams HostParams { get; set; } = new();
 
     private static Tuple<Method, string, Version> ParseStartLine(string str)
     {
