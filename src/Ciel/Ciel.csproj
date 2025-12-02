@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Ciel</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.1</Version>
+        <Title>Ciel Framework</Title>
+        <Authors>Ciel Framework Authors</Authors>
+        <Description>A ridiculously pleasant C# web framework.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/ciel-framework/ciel</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <Copyright>Copyright (c) 2025, the Ciel Framework Authors</Copyright>
+        <PackageTags>webframework,web,http</PackageTags>
+        <PackageProjectUrl>https://github.com/ciel-framework/ciel</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../readme.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>

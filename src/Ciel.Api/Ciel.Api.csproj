@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>Ciel</RootNamespace>
+        <PackageId>Ciel.Api</PackageId>
     </PropertyGroup>
 
 </Project>
